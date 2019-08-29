@@ -58,7 +58,7 @@ Vue.component('navigation',{
                 </li>
                 &nbsp;
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Broadcast Yourself</a>
+                    <a class="nav-link text-white" href="/broadcast">Broadcast Yourself</a>
                 </li>
                 &nbsp;
                 <li class="nav-item dropdown">
