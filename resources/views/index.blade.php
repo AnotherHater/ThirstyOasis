@@ -7,63 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Thirsty Oasis</title>
-    <style>
-       @media only screen and (min-width:1000px){
-            nav .nav-item a{
-                position:relative;
-                z-index: 1;
-                font-weight: bold;
-            }
-            nav .nav-item a:hover {
-                color: #343a40!important;
-                transition: all .4s ease-in-out; 
-            }
-            nav .nav-item a:after {
-                display: block;
-                position: absolute;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                right: 0;
-                margin: auto;
-                width: 100%;
-                height: 1px;
-                content: '.';
-                color: transparent;
-                background: #f8f9fa;
-                visibility: none;
-                opacity: 0;
-                z-index: -1;
-            }
-            nav .nav-item a:hover:after {
-                opacity: 1;
-                visibility: visible;
-                height: 100%;
-                transition: all .4s ease-in-out;
-                
-            }
-       }
-            /* width */
-        ::-webkit-scrollbar {
-            width: 10px;
-        }
 
-        /* Track */
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1; 
-        }
-        
-        /* Handle */
-        ::-webkit-scrollbar-thumb {
-            background: #888; 
-        }
-
-        /* Handle on hover */
-        ::-webkit-scrollbar-thumb:hover {
-            background: #555; 
-        }
-    </style>
 </head>
 <body class="bg-light">
     <div id="app">

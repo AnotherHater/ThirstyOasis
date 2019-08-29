@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/broadcast',function(){
+    return view('broadcast');
+});

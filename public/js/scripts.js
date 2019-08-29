@@ -7,7 +7,7 @@ Vue.component('pagehead',{
                 <tbody>
                     <tr>
                         <td class="align-top">                    
-                            <img src="storage/logo.png" class="rounded-circle float-left mt-3 ml-3" width="80" height="70" alt="">
+                            <img src="storage/logo.png" style="border:2px solid black;" class="rounded-circle float-left mt-3 ml-3" width="80" height="70" alt="">
                         </td>
                     </tr>
                     <tr>
@@ -23,7 +23,7 @@ Vue.component('pagehead',{
                 <tbody>
                     <tr>
                         <td class="align-top">                    
-                            <img src="storage/user.png" class="rounded-circle float-left mt-3 ml-5" width="80" height="70" alt="">
+                            <img id="profile" src="storage/user.png" class="rounded-circle float-left mt-3 ml-5" width="80" height="70" alt="">
                         </td>
                     </tr>
                     <tr>
@@ -181,7 +181,12 @@ Vue.component('list',{
     `
 })
 
-
+Vue.component('broadcast',{
+    template:
+    `
+    
+    `
+})
 
 const app = new Vue({
     el: '#app',

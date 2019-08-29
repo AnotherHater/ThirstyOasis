@@ -16,16 +16,10 @@
                     <a class="btn-floating btn-gplus mx-1">
                     <i class="fa fa-instagram text-white"> </i>
                     </a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="btn-floating btn-li mx-1">
-                    <i class="fa fa-linkedin text-white"> </i>
-                    </a>
-                </li>
-            
+                </li>            
             </ul>
         </div>
-        <div class="footer-copyright text-center py-3 text-white">© 2018 Copyright:
+        <div class="footer-copyright text-center py-3 text-white">© 2019 Copyright:
             <a href=""> Thirsty Oasis</a>
         </div>
     </footer>
