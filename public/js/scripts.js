@@ -1,3 +1,4 @@
+//This is the header of the page, where you can see the brand logo and user's photo
 Vue.component('pagehead',{
     template: 
     `
@@ -18,6 +19,9 @@ Vue.component('pagehead',{
                 </tbody>
             </table>
         </div>
+        <div class="ml-auto mt-auto">
+            <strong><a class="text-dark align-bottom ml-5">Balance: 100BTC</a></strong>
+        </div>
         <div class="ml-auto mr-4">
             <table>
                 <tbody>
@@ -37,164 +41,100 @@ Vue.component('pagehead',{
     </div>
     `
 });
-
-Vue.component('navigation',{
+//this is the stream section, you can see the video of the streamer here and the chat too. *MAY NEED RESPONSIVITY FIXES*
+Vue.component('stream',{
     template:
     `
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark mt-3">
-        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa fa-bars text-white"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav mx-auto">
-                &nbsp;
-                <li class="nav-item">
-                    <a class="nav-link text-white active" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                &nbsp;
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Update Profile</a>
-                </li>
-                &nbsp;
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="/broadcast">Broadcast Yourself</a>
-                </li>
-                &nbsp;
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Balance: 0 BTC
-                        <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Add Balance</a>
-                        <a class="dropdown-item" href="#">Withdraw Funds</a>
-                    </div>
-                </li>
-            </ul>
-                   
-        </div>  
-    </nav>
-    ` 
-})
-
-Vue.component("sorting",{
-    template: 
-    `
-    <div class="d-flex justify-content-center">
-        <div class="form-row align-items-center">
-            <div class="row">
-                <div class="col">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Theme
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                            <button class="dropdown-item" type="button">Item A</button>
-                            <button class="dropdown-item" type="button">Item B</button>
-                            <button class="dropdown-item" type="button">Item C</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Ethnicity
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                            <button class="dropdown-item" type="button">Ethnicity A</button>
-                            <button class="dropdown-item" type="button">Ethnicity B</button>
-                            <button class="dropdown-item" type="button">Ethnicity C</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Sort by
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                            <button class="dropdown-item" type="button">Filter A</button>
-                            <button class="dropdown-item" type="button">Filter B</button>
-                            <button class="dropdown-item" type="button">Filter C</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> 
-    </div> 
-    `
-})
-//this must be changed, at this moment is just for demo version
-Vue.component('list',{
-    template:
-    `
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4 mt-4">
-                <div class="card text-center">
-                    <h5 class="card-title mt-3">Theme A</h5>
-                    <img class="card-img-top responsive-img" src="http://paranoidandroid.co/assets/wallpapers/2018/submerged_desktop_thumb.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <a href="#" class="btn btn-primary bg-dark">
-                            Buy: 10BTC
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 mt-4">
-                <div class="card text-center">
-                    <h5 class="card-title mt-3">Theme B</h5>
-                    <img class="card-img-top responsive-img" src="http://paranoidandroid.co/assets/wallpapers/2018/submerged_desktop_thumb.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <a href="#" class="btn btn-primary bg-dark">
-                            Buy: 10BTC
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 mt-4">
-                <div class="card text-center">
-                    <h5 class="card-title mt-3">Theme C</h5>
-                    <img class="card-img-top responsive-img" src="http://paranoidandroid.co/assets/wallpapers/2018/submerged_desktop_thumb.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <a href="#" class="btn btn-primary bg-dark">
-                            Buy: 10BTC
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 mt-4">
-                <div class="card text-center">
-                    <h5 class="card-title mt-3">Theme A</h5>
-                    <img class="card-img-top responsive-img" src="http://paranoidandroid.co/assets/wallpapers/2018/submerged_desktop_thumb.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <a href="#" class="btn btn-primary bg-dark">
-                            Buy: 10BTC
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
+        <b-container class="bv-example-row center shadow">
+            <b-row>
+                <b-col cols="12" md="8" class="no-padding">
+                    <b-embed  type="iframe" aspect="4by3" src="https://www.youtube.com/embed/m_qlgFQs7E4" allowfullscreen ></b-embed>
+                </b-col>
+                <b-col cols="12" md="4" class="no-padding">
+                    <b-container class="chatbox bg-light">
+                        <b-row class="bg-light messages">
+                            <b-col align="center"></b-col>
+                        </b-row>
+                        <b-row class="bg-light send">
+                            <b-col align="center">
+                                <div>
+                                    <div>
+                                        <b-form-group id="fieldset-horizontal" description="Be respectful." label-for="input-horizontal">
+                                            <b-form-input id="input-horizontal"></b-form-input>
+                                        </b-form-group>
+                                    </div>
+                                </div>
+                            </b-col>
+                        </b-row>
+                    </b-container>
+                </b-col>
+            </b-row>        
+        </b-container>
     `
 })
 
-Vue.component('broadcast',{
-    template:
-    `
-    
-    `
-})
+Vue.component('v-select', VueSelect.VueSelect)
+
 
 const app = new Vue({
     el: '#app',
     data: {
-        
-    },
+        Tselected:"All Themes",
+        Eselected:"All Ethnicities",
+        Sselected:"Sort By",
+        sorting: [
+          {
+              title: 'Popularity',
+              icon: 'fa-eye'
+            },
+            {
+              title: 'Filter B',
+              icon: 'fa-eye'            
+            },
+            {
+              title: 'Filter C',
+              icon: 'fa-eye'
+            },
+            {
+              title: 'Filter D',
+              icon: 'fa-eye'
+            }
+        ],
+        ethnicity: [
+            {
+                title: 'Ethnicty A',
+                icon: 'fa-user'
+              },
+              {
+                title: 'Ethnicty B',
+                icon: 'fa-user'            
+              },
+              {
+                title: 'Ethnicty C',
+                icon: 'fa-user'
+              },
+              {
+                title: 'Ethnicty B',
+                icon: 'fa-user'
+              }
+          ],
+          theme: [
+            {
+                title: 'Dark themes',
+                icon: 'fa-book'
+              },
+              {
+                title: 'Light themes',
+                icon: 'fa-book'            
+              },
+              {
+                title: 'Heavy themes',
+                icon: 'fa-book'
+              }
+          ],
+      },
     methods:{
-       
+    
     },
     computed:{
        
