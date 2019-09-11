@@ -82,8 +82,12 @@ const app = new Vue({
         Tselected:"All Themes",
         Eselected:"All Ethnicities",
         Sselected:"Sort By",
-        sorting: [
-          {
+        sorting: [ 
+            {
+                title: 'All',
+                icon: 'fa-eye'
+            },
+            {
               title: 'Popularity',
               icon: 'fa-eye'
             },
@@ -101,7 +105,11 @@ const app = new Vue({
             }
         ],
         ethnicity: [
-            {
+              {
+                title: 'All Ethnicities',
+                icon: 'fa-user'
+              },
+              {
                 title: 'Ethnicty A',
                 icon: 'fa-user'
               },
@@ -119,7 +127,11 @@ const app = new Vue({
               }
           ],
           theme: [
-            {
+              {
+                title: 'All themes',
+                icon: 'fa-book'
+              },
+              {
                 title: 'Dark themes',
                 icon: 'fa-book'
               },
