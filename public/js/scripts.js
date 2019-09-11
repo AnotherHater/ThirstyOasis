@@ -8,21 +8,21 @@ Vue.component('pagehead',{
                 <tbody>
                     <tr>
                         <td class="align-top">                    
-                            <img src="storage/logo.png" style="border:2px solid black;" class="rounded-circle float-left mt-3 ml-3" width="80" height="70" alt="">
+                            <img id="logo" src="storage/logo.png" style="border:2px solid black;" class="rounded-circle float-left mt-3 ml-3" width="80" height="70" alt="">
                         </td>
                     </tr>
                     <tr>
                     <td class="align-bottom">
-                        <strong><a class="text-dark align-bottom ml-2">Thirsty Oasis</a></strong>
+                        <strong><p class="text-dark align-bottom ml-2 text-break text-center">Thirsty Oasis</p></strong>
                     </td>
                     </tr>
                 </tbody>
             </table>
         </div>
         <div class="ml-auto mt-auto">
-            <strong><a class="text-dark align-bottom ml-5">Balance: 100BTC</a></strong>
+            <strong><p class="text-dark align-bottom ml-5 text-center">Balance: 100BTC</p></strong>
         </div>
-        <div class="ml-auto mr-4">
+        <div class="mr-4">
             <table>
                 <tbody>
                     <tr>
@@ -32,7 +32,7 @@ Vue.component('pagehead',{
                     </tr>
                     <tr>
                         <td class="align-bottom">
-                            <strong><a class="text-dark align-bottom ml-5">Username</a></strong>
+                            <strong><a id="username" class="text-dark align-bottom ml-5">Username</a></strong>
                     </td>
                     </tr>
                 </tbody>
