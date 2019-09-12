@@ -19,7 +19,7 @@ Vue.component('pagehead',{
                 </tbody>
             </table>
         </div>
-        <div class="ml-auto mt-auto">
+        <div class="ml-auto mt-auto" style="transform: translateY(25px);font-size: 17px;">
             <strong><p class="text-dark align-bottom ml-5 text-center">Balance: 100BTC</p></strong>
         </div>
         <div class="mr-4">
